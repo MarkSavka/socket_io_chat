@@ -1,0 +1,61 @@
+*{padding: 0;margin: 0;}
+body{background-color: #232323;}
+.wrapper{
+    display: grid;
+    grid-template: 5fr 1fr / 8fr 1fr;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* ! ************************************ */
+
+.messages{
+    grid-area: 1 / 1 / span 1 / span 1;
+    /* background-color: rgb(76, 76, 230); */
+    display: flex;
+    flex-flow: column nowrap;
+    align-self: flex-start
+}
+.messages .msg{
+    display: flex;
+
+    margin: 5px;
+    width: fit-content;
+    padding: 15px 25px;
+    
+}
+.flex_left{
+    display: flex;
+    justify-content: flex-start;
+}
+.flex_right{
+    display: flex;
+    justify-content: flex-end;
+}
+.left_msg{
+    border-radius: 0px 10px 10px 0px;
+    background-color: rgb(134, 236, 86);
+}
+.right_msg{
+    border-radius: 10px 0px 0px 10px;
+    background-color: rgb(37, 113, 228);
+}
+
+/* ! *************************************** */
+
+.online{
+    grid-area: 1 / 2 / span 1 / span 1;
+    /* background-color: rgb(255, 116, 116); */
+
+    border: 2px dashed white;
+    color: white;
+    text-align: center;
+}
+
+/* ! **************************************** */
+
+
+form{
+    grid-area: 2 / 1 / span 1 / span 2;
+    /* background-color: rgb(123, 255, 123); */
+}
